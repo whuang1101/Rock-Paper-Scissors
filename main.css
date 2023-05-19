@@ -1,0 +1,54 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    gap: 60px;
+    margin: 30px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    gap:150px;
+}
+button{
+    font-size: 40px;
+    background-color: yellow;
+    border-radius: 30px;
+}
+.score-board{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+}
+.split{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 200px;
+    border: 3px solid black;
+    padding: 10px;
+}
+.player_vs_computer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+.player_image , .computer_image{
+    height: 300px;
+    margin: 0px;
+    padding: 0px;
+}
+.no_margin{
+    margin: 0px;
+}
+.names{
+    display: flex;
+    margin:0px;
+    padding: 0px;
+    justify-content: space-around;
+    gap: 300px;
+}
