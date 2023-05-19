@@ -39,7 +39,7 @@ splitDiv.append(splitDivOne);
 splitDiv.append(splitDivTwo);
 
 const playerScoreCounter = document.createElement("div");
-playerScoreCounter.textContent =("Player score: 0");
+playerScoreCounter.textContent =("Your score: 0");
 splitDivOne.append(playerScoreCounter);
 
 const computerScoreCounter = document.createElement("div");
@@ -150,7 +150,7 @@ function game(playerChoice){
     console.log(playerScore);
     console.log(computerScore)
     if(playerScore > computerScore){
-        console.log("The Player has won the majority of games.")
+        console.log("You have won the majority of games.")
     }
     else if(playerScore <computerScore){
         console.log("The computer has won the majority of games.")
@@ -175,7 +175,7 @@ const paper = document.querySelector(".paper");
 paper.addEventListener("click", () =>{
     if(playerScore < 5 && computerScore < 5){
     game("paper")
-    playerScoreCounter.textContent = "Player score: " + playerScore
+    playerScoreCounter.textContent = "Your score: " + playerScore
     computerScoreCounter.textContent = "Computer score: " + computerScore
     checkForWinner(playerScore,computerScore)
     show_reset();
@@ -184,7 +184,7 @@ const scissors = document.querySelector(".scissors");
 scissors.addEventListener("click", () =>{
     if(playerScore < 5 && computerScore < 5){
     game("scissors")
-    playerScoreCounter.textContent = "Player score: " + playerScore
+    playerScoreCounter.textContent = "Your score: " + playerScore
     computerScoreCounter.textContent = "Computer score: " + computerScore
     checkForWinner(playerScore,computerScore)
     show_reset()
@@ -211,7 +211,7 @@ reset.textContent = "Reset";
 reset.addEventListener("click", ()=>{
     playerScore =0;
     computerScore =0;
-    playerScoreCounter.textContent = "Player Score: " + playerScore;
+    playerScoreCounter.textContent = "Your Score: " + playerScore;
     computerScoreCounter.textContent = "Computer Score: " + computerScore;
     playerImage.src = "./images/rock_paper_scissors.jpeg";
     computerImage.src ="./images/rock_paper_scissors.jpeg";
